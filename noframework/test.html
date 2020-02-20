@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="box" id="VueBox">
+                        {{message.textopen }}
+                        <br />
+                        {{message.number}}
+                    </div>
+                </div>
+                <div class="column">A column </div>
+                <div class="column">A column </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="https://use.fontawsome.com/releases/v5.3.1/js/all.js"></script>
+    <!--missing src-->
+    <script>
+        const app = new Vue({
+            el: '#vueBox',
+            data: {
+                message: {
+                    text: 'Hello Vue!',
+                    number: 5
+                }
+                
+            }
+        })
+    </script>
+</body>
+</html>
