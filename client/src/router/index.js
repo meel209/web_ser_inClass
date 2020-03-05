@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import Home from '../views/Home.vue'
 import Game from '../views/Game.vue'
 import Login from '../views/Login.vue'
+import { CurrentUser } from '../models/Users'
 
 Vue.use(VueRouter)
 
@@ -15,15 +17,19 @@ const routes = [
   {
     path: '/game',
     name: 'Game',
-    component: Game
+    component: Game, meta: { isSecret = true }
+
+ /*   beforeEnter: (to,from,next) =>{
+      if (!CurrentUser) next('/login'); 
+      else next(); // locks game so if button is clicked you won't go anywhere
+    }*/
   },
+  
   {
     path: '/login',
     name: 'Login',
     component: Login
   },
-
-
 
   {
     path: '/about',
@@ -41,4 +47,9 @@ const router = new VueRouter({
   routes
 })
 
+router.beforeEach( (to,from,next) => {
+  if(to.meta.isSecret && !CurrentUser) next('/login');
+  else next();
+
+ });
 export default router
