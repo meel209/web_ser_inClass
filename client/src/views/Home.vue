@@ -2,7 +2,7 @@
 
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
   </div>
 <!--
   <div class="card">
@@ -19,9 +19,8 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import {Players, PictureDeck, CurrentPicture, Init} from "../models/Game";
-Init();
+//import {Players, PictureDeck, CurrentPicture, Init} from "../models/Game";
+//Init();
 
 
 export default {
@@ -31,7 +30,7 @@ export default {
   }),
 
   components: {
-    HelloWorld
+    
   }
 
 }

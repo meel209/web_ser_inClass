@@ -17,7 +17,7 @@ const routes = [
   {
     path: '/game',
     name: 'Game',
-    component: Game, meta: { isSecret = true }
+    component: Game, meta: { isSecret: true }
 
  /*   beforeEnter: (to,from,next) =>{
       if (!CurrentUser) next('/login'); 
