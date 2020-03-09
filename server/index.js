@@ -1,4 +1,4 @@
-console.log("New");
+//console.log("New");
 const express = require('express');
 const gameController = require('./controllers/game')
 
@@ -12,4 +12,4 @@ app
     .use('/game', gameController)
     
 
-app.listen(port, () => console.log('Listing at http://localhost:${port}') );
+app.listen(port, () => console.log('Listening at http://localhost:${port}') );

@@ -1,4 +1,4 @@
-const CaptionsDeck = [
+const quoteCards = [
     'This is dummy text here One',
     'This is dummy text here Two',
     'This is dummy text here Three',
