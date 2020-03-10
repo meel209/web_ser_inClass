@@ -1,37 +1,11 @@
+  
 <template>
-
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    
-  </div>
-<!--
-  <div class="card">
-    <div class="card-content">
-      <ul>
-          <li v-for="player in Players" :key="player.Name" >
-            {{player.Name}} {{player.Score}}
-      </ul>
+  <section class="container">
+    <div class="hero">
+        <h1 class="title">
+          Home Page
+        </h1>
     </div>
-  </div>
--->
-
-</template>
-
-<script>
-// @ is an alias to /src
-//import {Players, PictureDeck, CurrentPicture, Init} from "../models/Game";
-//Init();
-
-
-export default {
-  name: 'Home',
-  data:()=>({
-
-  }),
-
-  components: {
     
-  }
-
-}
-</script>
+  </section>
+</template>
