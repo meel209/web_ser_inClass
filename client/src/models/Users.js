@@ -2,8 +2,8 @@
 */
 const Users = [
     { Name: 'Moshe', Password: '2020', Email: 'plotkinm@newpaltz.edu' },
-    { Name: 'Bracha', Password: '5780', Email: 'chabad@newpaltz.edu' }
-
+    { Name: 'Bracha', Password: '5780', Email: 'chabad@newpaltz.edu' },
+    { Name: 'temp', Password: 'temp', Email: 'temp@new.edu' }
 ];
 
 export let CurrentUser = null;
