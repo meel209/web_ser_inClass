@@ -1,0 +1,1 @@
+npm run build - compiles and puts files in /dist which is used in the server.
