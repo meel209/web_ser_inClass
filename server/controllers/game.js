@@ -18,6 +18,6 @@ router
         res.send(quoteCards[quoteCards.list.length - 1]);
 
     })
-
+    // NEEDS WORK
 
 module.exports = router;

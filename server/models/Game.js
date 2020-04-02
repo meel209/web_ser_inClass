@@ -1,5 +1,8 @@
 	
-const CurrentUser = require("./Users");
+const user = require("./Users");
+const CaptionsDeck = requires ('../')
+
+const DEAL_AMOUNT = 3;
 
 const Players = [
     { Name: 'Bernie', Score: 0, isDealer: false }
@@ -25,15 +28,16 @@ function SubmitCaption(caption, playerId){
     })
 }
 
-function Init(){
+function Join(userId){
+    const user = users.get(usersId);
     // This only made sense at the client.
     // TODO: Rethink how this works at the server
     Players.push( { Name: CurrentUser.Name, Score: 0, isDealer: true })
 
-    MyCards.push(CaptionsDeck[0])
-    MyCards.push(CaptionsDeck[1]);
+    const myCards = CaptionsDeck.slice(iCurrentCaption, DEAL_AMOUNT);
+    iCurrentCaption += DEAL_AMOUNT;
 
-    CurrentPicture = PictureDeck[0];
+   return { playerID: Players.length -1, myCards }; //give each users it's initialized cards
 }
 
 module.exports = {
