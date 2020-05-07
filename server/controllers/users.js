@@ -6,13 +6,13 @@ const users = require('../models/Users');
 const router = express.Router();
 
 router
-    .post('/login', (req,res) => {
-        try{
-            const user = user.Login(req.body.email, req.body.password,res.send( { ...user, Password: null /* or undefined*/ } ));
+    .post('/login', async (req, res) => {
+        try {
+            const user = await users.Login(req.body.email, req.body.password);
+            res.send( { ...user, Password: undefined } );
         } catch (error) {
-            res.status(401).send( {message: error.message} );
-        }               
-
+            res.status(401).send({ message: error.message });
+        }
     })
 
 module.exports = router;

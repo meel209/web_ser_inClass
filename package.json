@@ -5,27 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-     "dev": "nodemon server/index.js"
+    "dev": "nodemon server/index.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "2.0.2"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/meel209/web_ser_inClass"
   },
-
-
   "author": "",
   "license": "ISC",
-
   "bugs": {
     "url": "https://github.com/meel209/web_ser_inClass"
   },
-
   "homepage": "https://github.com/meel209/web_ser_inClass#readme"
 }
