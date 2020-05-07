@@ -1,11 +1,7 @@
 
 /* R"J
 */
-<<<<<<< HEAD
-const axios = require('axios').default;
-=======
 //const axios = require('axios').default;
->>>>>>> 1be90abb6813aa10990124aa4f941d57efb61311
 
 const Users = [
     { Name: 'Moshe', Password: '2020', Email: 'plotkinm@newpaltz.edu' },
